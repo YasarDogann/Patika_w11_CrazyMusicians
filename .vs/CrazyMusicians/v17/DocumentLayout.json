@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week11\\CrazyMusicians\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{724BD6D6-7B73-4B8E-BE9F-A6A7A4E86FCF}|CrazyMusicians.csproj|c:\\users\\yasar\\source\\repos\\patika\u002B\\week11\\crazymusicians\\controllers\\musicianscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724BD6D6-7B73-4B8E-BE9F-A6A7A4E86FCF}|CrazyMusicians.csproj|solutionrelative:controllers\\musicianscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MusiciansControllers.cs",
+              "DocumentMoniker": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week11\\CrazyMusicians\\Controllers\\MusiciansControllers.cs",
+              "RelativeDocumentMoniker": "Controllers\\MusiciansControllers.cs",
+              "ToolTip": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week11\\CrazyMusicians\\Controllers\\MusiciansControllers.cs",
+              "RelativeToolTip": "Controllers\\MusiciansControllers.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T12:35:33.378Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
