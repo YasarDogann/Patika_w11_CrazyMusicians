@@ -58,7 +58,7 @@ Routing aşamasında Galactic Tour uygulamasında yapılan genel geçer routing 
 
 
 - Routing Örneği:
-  -| Yöntem	                          | URL	                               | Açıklama                  |
+   | Yöntem	                          | URL	                               | Açıklama                  |
    |--------------------------------------|------------------------------------|------------------------   |
    | GET	                          | api/musicians	               | Tüm müzisyenleri getir    |
    | GET                              	  | api/musicians/{id}	               | ID'ye göre müzisyen getir |
