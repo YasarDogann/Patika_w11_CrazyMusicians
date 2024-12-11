@@ -28,15 +28,45 @@ Routing aşamasında Galactic Tour uygulamasında yapılan genel geçer routing 
   - PATCH: Kısmi güncelleme.
   - PUT: Tam güncelleme.
   - DELETE: Müzisyen silme.
+    
 - `string.IsNullOrWhiteSpace`:
   - Bu yöntem, bir string'in:
     - Boş ("") olup olmadığını,
     - Sadece boşluklardan oluşup oluşmadığını kontrol eder.
    - Örnek:
-     `
-     string.IsNullOrWhiteSpace(null);       // true
-     string.IsNullOrWhiteSpace("");         // true
-     string.IsNullOrWhiteSpace("   ");      // true
-     string.IsNullOrWhiteSpace("John");     // false
-     `
-      
+       `string.IsNullOrWhiteSpace(null);       // true  `
+       `string.IsNullOrWhiteSpace("");         // true  `
+       `string.IsNullOrWhiteSpace("   ");      // true  `
+       `string.IsNullOrWhiteSpace("John");     // false  `
+     
+- Contains Kullanımı: Kullanıcı tam isim yerine ismin bir kısmını yazsa bile sonuç dönebilir.
+    - Örnek Kod: (GET)
+      `// Name içeren müzisyenleri filtrele (büyük/küçük harf duyarlılığı yok)
+    var musicians = MusicianData.Musicians
+        .Where(m => m.Name.Contains(name, StringComparison.OrdinalIgnoreCase))
+        .ToList(); // Listeye dönüştürüyoruz.`
+    - Açıklama:
+      - Örneğin, `name` değeri "Ahmet" yerine "Ah" girilirse, "Ahmet Çalgı" sonucu döner.
+
+- Örnek Testler:
+  -| URL                             | Output                              |
+   |---------------------------------|-------------------------------------|
+   | `/api/musicians/musician/Ahmet` | Ahmet Çalgı                         |
+   | `/api/musicians/musician/A`     | Ahmet Çalgı, Ali Perde              |
+   | `/api/musicians/musician/Zey`   | Zeynep Melodi                       |
+   | `/api/musicians/musician/X`     | NotFound                            |
+
+
+- Routing Örneği:
+  -| Yöntem	                          | URL	                               | Açıklama                  |
+   |----------------------------------|------------------------------------|------------------------   |
+   | GET	                            | api/musicians	                     | Tüm müzisyenleri getir    |
+   | GET                              | api/musicians/{id}	               | ID'ye göre müzisyen getir |
+   | GET	                            | api/musicians/search?name=Ahmet    | İsimle müzisyen ara       |
+   | POST	                            | api/musicians                      | Yeni müzisyen ekle        |
+   | PUT	                            | api/musicians/{id}                 | Müzisyeni tamamen güncelle|
+	 | PATCH	                          | api/musicians/{id}	               | Müzisyeni kısmen güncelle |
+   | DELETE	                          | api/musicians/{id}	               | Müzisyeni sil             |
+		
+
+
