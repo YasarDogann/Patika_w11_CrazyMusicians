@@ -49,7 +49,7 @@ Routing aşamasında Galactic Tour uygulamasında yapılan genel geçer routing 
       - Örneğin, `name` değeri "Ahmet" yerine "Ah" girilirse, "Ahmet Çalgı" sonucu döner.
 
 - Örnek Testler:
-  -| URL                             | Output                              |
+   | URL                             | Output                              |
    |---------------------------------|-------------------------------------|
    | `/api/musicians/musician/Ahmet` | Ahmet Çalgı                         |
    | `/api/musicians/musician/A`     | Ahmet Çalgı, Ali Perde              |
